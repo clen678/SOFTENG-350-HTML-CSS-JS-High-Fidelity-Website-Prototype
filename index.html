@@ -22,7 +22,7 @@
           <img src="Group2.svg" alt="website-logo" class="logo" />
           <div class="log-sign">
             <a href="/" class="login"> Login </a>
-            <button id="myBtn" class="sign-up">Register</button>
+            <button id="trigger-modal" class="sign-up">Register</button>
           </div>
         </div>
       </nav>
@@ -39,7 +39,7 @@
             <h1>Start Browsing Now!</h1>
             <form>
               <input type="text" placeholder="Search items.." class="search" />
-              <button type="submit" class="submit-btn fa fa-search"></button>
+              <a type="submit" class="submit-btn fa fa-search"></a>
             </form>
           </div>
         </div>
@@ -126,8 +126,8 @@
         <span class="close">&times;</span>
         <img src="Group 3.svg" alt="website-logo" class="sub-logo" style="width: 200px" />
         <h1>Register</h1>
-        <div class="form-box">
-          <div class="box">
+        <div class="form-box" id="form-ct">
+          <div class="box" id="user-details">
             <h2>User Details</h2>
             <form class="inputs">
               <input type="text" placeholder="Given Name" class="input" /> <br />
@@ -137,7 +137,7 @@
             </form>
           </div>
 
-          <div class="box">
+          <div class="box" id="address-details">
             <h2>Addresses</h2>
             <form class="inputs">
               <input type="text" placeholder="Home Address" class="input" /> <br />
@@ -145,7 +145,7 @@
             </form>
           </div>
 
-          <div class="box">
+          <div class="box" id="contact-details">
             <h2>Contacts</h2>
             <form class="inputs">
               <input type="text" placeholder="Mobile Number" class="input" /> <br />
@@ -163,7 +163,7 @@
       var modal = document.getElementById('myModal');
 
       // Get the button that opens the modal
-      var btn = document.getElementById('myBtn');
+      var btn = document.getElementById('trigger-modal');
 
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName('close')[0];
