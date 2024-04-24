@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <style></style>
   </head>
 
@@ -21,7 +22,7 @@
           <img src="Group2.svg" alt="website-logo" class="logo" />
           <div class="log-sign">
             <a href="/" class="login"> Login </a>
-            <a href="/" class="sign-up"> Sign up </a>
+            <button id="myBtn" class="sign-up">Register</button>
           </div>
         </div>
       </nav>
@@ -32,22 +33,157 @@
       <!-- Page content -->
       <div class="page-content">
         <div class="search-component">
-          <h1>Start Browsing Now!</h1>
+          <img src="background3.jpg" alt="search-background-image" class="search-background" />
+
           <div class="search-bar">
+            <h1>Start Browsing Now!</h1>
             <form>
               <input type="text" placeholder="Search items.." class="search" />
-              <button type="submit" class="submit-btn">O</button>
+              <button type="submit" class="submit-btn fa fa-search"></button>
             </form>
           </div>
         </div>
 
-        <div class="gallery"></div>
-      </div>
+        <div class="gallery">
+          <h1>Listings near you..</h1>
+          <div class="items">
+            <div class="item">
+              <p>New Lynn</p>
+              <a href="/" class="item-link">
+                <img src="22823640.jpg" alt="item-image" class="item-image" />
+              </a>
+              <a href="/" class="item-link-text">Air Cooler</a>
+              <p>2 days ago</p>
+            </div>
 
+            <div class="item">
+              <p>North shore</p>
+              <a href="/" class="item-link">
+                <img src="22833672.jpg" alt="item-image2" class="item-image" />
+              </a>
+              <a href="/" class="item-link-text">Couch</a>
+              <p>2 days ago</p>
+            </div>
+
+            <div class="item">
+              <p>Ponsonby</p>
+              <a href="/" class="item-link">
+                <img src="22834078.jpg" alt="item-image3" class="item-image" />
+              </a>
+              <a href="/" class="item-link-text">TV Cabinet</a>
+              <p>2 days ago</p>
+            </div>
+
+            <div class="item">
+              <p>Grafton</p>
+              <a href="/" class="item-link">
+                <img src="22833672.jpg" alt="item-image4" class="item-image" />
+              </a>
+              <a href="/" class="item-link-text">New Item</a>
+              <p>2 days ago</p>
+            </div>
+
+            <div class="item">
+              <p>Grafton</p>
+              <a href="/" class="item-link">
+                <img src="22833672.jpg" alt="item-image4" class="item-image" />
+              </a>
+              <a href="/" class="item-link-text">New Item</a>
+              <p>2 days ago</p>
+            </div>
+
+            <div class="item">
+              <p>Grafton</p>
+              <a href="/" class="item-link">
+                <img src="22833672.jpg" alt="item-image4" class="item-image" />
+              </a>
+              <a href="/" class="item-link-text">New Item</a>
+              <p>2 days ago</p>
+            </div>
+
+            <div class="item">
+              <p>Grafton</p>
+              <a href="/" class="item-link">
+                <img src="22833672.jpg" alt="item-image4" class="item-image" />
+              </a>
+              <a href="/" class="item-link-text">New Item</a>
+              <p>2 days ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <h1 style="word-wrap: break-word; font-size: 300px">wwwwwwwwwwwwwwwwwwwwwwwwwwww</h1> -->
       <!-- End page content -->
     </div>
 
     <!-- Footer -->
     <footer class=""></footer>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="Group 3.svg" alt="website-logo" class="sub-logo" style="width: 200px" />
+        <h1>Register</h1>
+        <div class="form-box">
+          <div class="box">
+            <h2>User Details</h2>
+            <form class="inputs">
+              <input type="text" placeholder="Given Name" class="input" /> <br />
+              <input type="text" placeholder="Surname" class="input" /> <br />
+              <input type="text" placeholder="Username" class="input" /> <br />
+              <input type="password" placeholder="Password" class="input" /> <br />
+            </form>
+          </div>
+
+          <div class="box">
+            <h2>Addresses</h2>
+            <form class="inputs">
+              <input type="text" placeholder="Home Address" class="input" /> <br />
+              <input type="text" placeholder="Work Address" class="input" /> <br />
+            </form>
+          </div>
+
+          <div class="box">
+            <h2>Contacts</h2>
+            <form class="inputs">
+              <input type="text" placeholder="Mobile Number" class="input" /> <br />
+              <input type="text" placeholder="Email" class="input" /> <br />
+            </form>
+          </div>
+        </div>
+        <button type="submit" class="submit-details">Register</button>
+        <img src="Vector.svg" alt="background-logo" class="background-logo" />
+      </div>
+    </div>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById('myModal');
+
+      // Get the button that opens the modal
+      var btn = document.getElementById('myBtn');
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName('close')[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = 'block';
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = 'none';
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = 'none';
+        }
+      };
+    </script>
   </body>
 </html>
