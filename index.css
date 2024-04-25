@@ -217,15 +217,18 @@ body {
   height: 720px;
   border-radius: 25px;
   color: white;
+  overflow-y: scroll;
 }
 
 /* The Close Button */
 .close {
+  position: fixed;
+  right: 500px;
   color: #ffffff;
-  float: right;
   font-size: 28px;
   font-weight: bold;
   transition: 150ms ease-in-out;
+  z-index: 999;
 }
 
 .close:hover,
@@ -242,18 +245,20 @@ body {
 .form-box {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .box {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .inputs input {
   display: flex;
-  margin-bottom: 10px;
+  margin: 5px 0 5px 0;
   flex-direction: column;
-  width: 200px;
+  width: 300px;
   border-radius: 20px;
   padding: 10px 20px;
   border: 2px solid #ffffff;
@@ -265,6 +270,10 @@ body {
   outline: none;
 }
 
+.inputs label {
+  margin: 0 10px 0 10px;
+}
+
 .submit-details {
   background-color: var(--poohighlight);
   color: #ffffff;
@@ -272,11 +281,11 @@ body {
   border-radius: 100px;
   border: 2px solid transparent;
   padding: 10px 20px;
-  margin-left: 10px;
+  margin-left: auto;
   cursor: pointer;
   /* box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3); */
   /* margin-left: 795px; */
-  margin-top: 80px;
+  /* margin-top: 50px; */
   transition: 150ms ease-in-out;
 }
 
@@ -298,7 +307,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #e9e9e9;
+  background: #e9e9e900;
 }
 
 ::-webkit-scrollbar-thumb {
