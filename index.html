@@ -54,7 +54,10 @@
           <h1>Listings near you..</h1>
           <div class="items">
             <div class="item">
-              <p>New Lynn</p>
+              <div class="item-location" style="display: flex; gap: 5px">
+                <p class="fa fa-map-marker" alt="location pin icon"></p>
+                <p>New Lynn</p>
+              </div>
               <a href="" class="item-link" alt="click on image to go to air cooler listing">
                 <img src="22823640.jpg" alt="Air Cooler-image" class="item-image" />
               </a>
@@ -63,7 +66,10 @@
             </div>
 
             <div class="item">
-              <p>North shore</p>
+              <div class="item-location" style="display: flex; gap: 5px">
+                <p class="fa fa-map-marker" alt="location pin icon"></p>
+                <p>North shore</p>
+              </div>
               <a href="" class="item-link" alt="click on image to go to couch listing">
                 <img src="22833672.jpg" alt="Couch-image" class="item-image" />
               </a>
@@ -72,7 +78,10 @@
             </div>
 
             <div class="item">
-              <p>Ponsonby</p>
+              <div class="item-location" style="display: flex; gap: 5px">
+                <p class="fa fa-map-marker" alt="location pin icon"></p>
+                <p>Ponsonby</p>
+              </div>
               <a href="" class="item-link" alt="click on image to go to tv cabinet listing">
                 <img src="22834078.jpg" alt="TV-Cabinet-image" class="item-image" />
               </a>
@@ -81,7 +90,10 @@
             </div>
 
             <div class="item">
-              <p>Grafton</p>
+              <div class="item-location" style="display: flex; gap: 5px">
+                <p class="fa fa-map-marker" alt="location pin icon"></p>
+                <p>Grafton</p>
+              </div>
               <a href="" class="item-link" alt="click on image to go to new item listing">
                 <img src="22833672.jpg" alt="item-image4" class="item-image" />
               </a>
@@ -90,7 +102,10 @@
             </div>
 
             <div class="item">
-              <p>Grafton</p>
+              <div class="item-location" style="display: flex; gap: 5px">
+                <p class="fa fa-map-marker" alt="location pin icon"></p>
+                <p>Grafton</p>
+              </div>
               <a href="" class="item-link" alt="click on image to go to new item listing">
                 <img src="22833672.jpg" alt="item-image4" class="item-image" />
               </a>
@@ -99,7 +114,10 @@
             </div>
 
             <div class="item">
-              <p>Grafton</p>
+              <div class="item-location" style="display: flex; gap: 5px">
+                <p class="fa fa-map-marker" alt="location pin icon"></p>
+                <p>Grafton</p>
+              </div>
               <a href="" class="item-link" alt="click on image to go to new item listing">
                 <img src="22833672.jpg" alt="item-image4" class="item-image" />
               </a>
@@ -108,7 +126,10 @@
             </div>
 
             <div class="item">
-              <p>Grafton</p>
+              <div class="item-location" style="display: flex; gap: 5px">
+                <p class="fa fa-map-marker" alt="location pin icon"></p>
+                <p>Grafton</p>
+              </div>
               <a href="" class="item-link" alt="click on image to go to new item listing">
                 <img src="22833672.jpg" alt="item-image4" class="item-image" />
               </a>
@@ -130,9 +151,10 @@
         <img src="Group 3.svg" alt="website-logo" class="sub-logo" style="width: 200px" />
         <h1>Register</h1>
         <div class="form-box" id="form-ct">
-          <div class="box" id="user-details" alt="user details form">
-            <h2>User Details</h2>
-            <form class="inputs">
+          <form class="inputs">
+            <div class="box" id="user-details" alt="user details form">
+              <h2>User Details</h2>
+
               <label for="givename">Given Name</label>
               <input type="text" placeholder="Given Name" class="input" alt="Enter given name" /> <br />
               <label for="surname">Surname</label>
@@ -141,28 +163,26 @@
               <input type="text" placeholder="Username" class="input" alt="Enter username" /> <br />
               <label for="password">Password</label>
               <input type="password" placeholder="Password" class="input" alt="Enter password" /> <br />
-            </form>
-          </div>
+            </div>
 
-          <div class="box" id="address-details" alt="address details form">
-            <h2>Addresses</h2>
-            <form class="inputs">
+            <div class="box" id="address-details" alt="address details form">
+              <h2>Addresses</h2>
+
               <label for="homeaddress">Home Address</label>
               <input type="text" placeholder="Home Address" class="input" alt="Enter home address" /> <br />
               <label for="workaddress">Work Address</label>
               <input type="text" placeholder="Work Address" class="input" alt="Enter work address" /> <br />
-            </form>
-          </div>
+            </div>
 
-          <div class="box" id="contact-details" alt="contact details form">
-            <h2>Contacts</h2>
-            <form class="inputs">
+            <div class="box" id="contact-details" alt="contact details form">
+              <h2>Contacts</h2>
+
               <label for="mobilenumber">Mobile Number</label>
               <input type="text" placeholder="Mobile Number" class="input" alt="Enter mobile number" /> <br />
               <label for="email">Email</label>
               <input type="text" placeholder="Email" class="input" alt="Enter email" /> <br />
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
         <button type="submit" class="submit-details" alt="register button, click to submit details in the form">Register</button>
         <img src="Vector.svg" alt="background-logo" class="background-logo" alt="background-logo" />
