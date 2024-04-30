@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="index.css" /> -->
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="index2.css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <style></style>
   </head>
@@ -21,11 +21,11 @@
               <a href="" alt="link to About"> About </a>
               <a href="" alt="link to Browse"> Browse </a>
             </div>
-            <img src="Group2.svg" alt="website-logo" class="logo" />
-            <!-- <img src="Vector.svg" alt="website-logo" class="logo" /> -->
+            <!-- <img src="Group2.svg" alt="website-logo" class="logo" /> -->
+            <img src="sad.svg" alt="website-logo" class="logo" />
             <div class="log-sign">
               <a href="" class="login" alt="link to Login"> Login </a>
-              <button id="trigger-modal" class="sign-up" alt="Link to Register">Register</button>
+              <a id="trigger-modal" class="sign-up" alt="Link to Register" onClick="openModal()">Register</a>
             </div>
           </div>
         </nav>
@@ -34,8 +34,8 @@
       <!-- Page content -->
       <div class="page-content">
         <div class="search-component">
-          <img src="background3.jpg" alt="main-search-background-image" class="search-background" />
-          <!-- <img src="background4.jpg" alt="main-search-background-image" class="search-background" /> -->
+          <!-- <img src="background3.jpg" alt="main-search-background-image" class="search-background" /> -->
+          <img src="background4.jpg" alt="main-search-background-image" class="search-background" />
 
           <div class="search-bar">
             <h1>Start Browsing Now!</h1>
@@ -150,7 +150,7 @@
     <div id="registerModal" class="modal">
       <!-- Modal content -->
       <div class="modal-content" alt="register a new account. enter details below. press escape to exit">
-        <span class="close">&times;</span>
+        <span class="close" onclick="closeModal()">&times;</span>
         <img src="Group 3.svg" alt="website-logo" class="sub-logo" style="width: 200px" />
         <h1>Register</h1>
         <div class="form-box" id="form-ct">
@@ -181,7 +181,7 @@
             </div>
           </form>
         </div>
-        <button type="submit" class="submit-details" alt="register button, click to submit details in the form">Register</button>
+        <button type="submit" class="submit-details" alt="register button, click to submit details in the form" onClick="closeModal()">Register</button>
         <img src="Vector.svg" alt="background-logo" class="background-logo" alt="background-logo" />
       </div>
     </div>
@@ -198,14 +198,24 @@
 
       var modalOpen = false;
 
-      // When the user clicks the button, open the modal
-      btn.onclick = function () {
+      // // When the user clicks the button, open the modal
+      // btn.onclick = function () {
+      //   modal.style.display = 'block';
+      //   modalOpen = true;
+      // };
+
+      const openModal = () => {
         modal.style.display = 'block';
         modalOpen = true;
       };
 
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function () {
+      // // When the user clicks on <span> (x), close the modal
+      // span.onclick = function () {
+      //   modal.style.display = 'none';
+      //   modalOpen = false;
+      // };
+
+      const closeModal = () => {
         modal.style.display = 'none';
         modalOpen = false;
       };
