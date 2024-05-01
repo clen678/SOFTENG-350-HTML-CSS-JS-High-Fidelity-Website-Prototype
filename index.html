@@ -3,29 +3,26 @@
   <head>
     <title>Softeng 350 freecycle</title>
     <meta charset="UTF-8" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="index.css" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <style></style>
   </head>
 
   <body>
     <main class="whole-container">
       <header>
+        <!-- Navbar -->
         <nav class="nav-bar" alt="navbar containing links to home,about,browse, login, register">
           <div class="nav-top">
             <div class="page-navigation-buttons">
-              <a href="" alt="link to Home"> Home </a>
-              <a href="" alt="link to About"> About </a>
-              <a href="" alt="link to Browse"> Browse </a>
+              <a href="" alt="clickable link to Home"> Home </a>
+              <a href="" alt="clickable link to About"> About </a>
+              <a href="" alt="clickable link to Browse"> Browse </a>
             </div>
-            <!-- <img src="Group2.svg" alt="website-logo" class="logo" /> -->
-            <img src="sad.svg" alt="website-logo" class="logo" />
+            <img src="logo.svg" alt="website-logo" class="logo" />
             <div class="log-sign">
-              <a href="" class="login" alt="link to Login"> Login </a>
-              <a id="trigger-modal" class="sign-up" alt="Link to Register" onClick="openModal()">Register</a>
+              <a href="" class="login" alt="clickable link to Login"> Login </a>
+              <a id="trigger-modal" class="sign-up" alt="clickable Link to Register" onClick="openModal()">Register</a>
             </div>
           </div>
         </nav>
@@ -34,7 +31,6 @@
       <!-- Page content -->
       <div class="page-content">
         <div class="search-component">
-          <!-- <img src="background3.jpg" alt="main-search-background-image" class="search-background" /> -->
           <img src="background4.jpg" alt="main-search-background-image" class="search-background" />
 
           <div class="search-bar">
@@ -44,15 +40,16 @@
               <a type="submit" class="submit-btn fa fa-search" alt="Searchbar submit button"></a>
             </form>
             <div class="categories">
-              <a href="" alt="link to clothing items">Clothing</a>
-              <a href="" alt="link to furniture items">Furniture</a>
-              <a href="" alt="link to electronic items">Electronics</a>
-              <a href="" alt="link to toys">Toys</a>
-              <a href="" alt="link to see more items">See more</a>
+              <a href="" alt="clickable link to clothing items">Clothing</a>
+              <a href="" alt="clickable link to furniture items">Furniture</a>
+              <a href="" alt="clickable link to electronic items">Electronics</a>
+              <a href="" alt="clickable link to toys">Toys</a>
+              <a href="" alt="clickable link to see more items">See more</a>
             </div>
           </div>
         </div>
 
+        <!-- Gallery -->
         <div class="gallery">
           <h1>Listings near you..</h1>
           <div class="items">
@@ -144,14 +141,13 @@
         </div>
       </div>
     </main>
-    <!-- End page content -->
 
     <!-- Modal -->
     <div id="registerModal" class="modal">
       <!-- Modal content -->
       <div class="modal-content" alt="register a new account. enter details below. press escape to exit">
         <span class="close" onclick="closeModal()">&times;</span>
-        <img src="Group 3.svg" alt="website-logo" class="sub-logo" style="width: 200px" />
+        <img src="logowhite.svg" alt="website-logo" class="sub-logo" style="width: 200px" />
         <h1>Register</h1>
         <div class="form-box" id="form-ct">
           <form class="inputs">
@@ -179,55 +175,73 @@
               <label for="email">Email</label>
               <input type="text" placeholder="Email" class="input" alt="Enter email" /> <br />
             </div>
+            <button type="submit" class="submit-details" alt="register button, click to submit details in the form" onClick="closeModal()">Register</button>
           </form>
         </div>
-        <button type="submit" class="submit-details" alt="register button, click to submit details in the form" onClick="closeModal()">Register</button>
-        <img src="Vector.svg" alt="background-logo" class="background-logo" alt="background-logo" />
+
+        <img src="backgroundlogo.svg" alt="background-logo" class="background-logo" alt="background-logo" />
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer" alt="web page footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="logowhite.svg" alt="website-logo" class="footer-logo" />
+        </div>
+        <div class="footer-links">
+          <a href="" alt="clickable link to Home"> Home </a>
+          <a href="" alt="clickable link to About"> About </a>
+          <a href="" alt="clickable link to Browse"> Browse </a>
+          <a href="" alt="clickable link to Login"> Login </a>
+          <a href="" alt="clickable link to Register"> Register </a>
+          <a href="" alt="clickable link to Help"> Help </a>
+          <a href="" alt="clickable link to Contact"> Contact </a>
+        </div>
+        <div class="footer-socials">
+          <a href="" class="fa fa-facebook" alt="clickable facebook link"></a>
+          <a href="" class="fa fa-twitter" alt="clickable twitter link"></a>
+          <a href="" class="fa fa-instagram" alt="clickable instagram link"></a>
+        </div>
+      </div>
+    </footer>
 
     <script>
       // Get the modal
       var modal = document.getElementById('registerModal');
 
       // Get the button that opens the modal
-      var btn = document.getElementById('trigger-modal');
+      // var btn = document.getElementById('trigger-modal');
 
       // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName('close')[0];
+      // var span = document.getElementsByClassName('close')[0];
 
       var modalOpen = false;
 
-      // // When the user clicks the button, open the modal
-      // btn.onclick = function () {
-      //   modal.style.display = 'block';
-      //   modalOpen = true;
-      // };
-
+      // Handling open model function
       const openModal = () => {
         modal.style.display = 'block';
         modalOpen = true;
+        document.body.style.overflow = 'hidden';
       };
 
-      // // When the user clicks on <span> (x), close the modal
-      // span.onclick = function () {
-      //   modal.style.display = 'none';
-      //   modalOpen = false;
-      // };
-
+      // Handling close modal function
       const closeModal = () => {
         modal.style.display = 'none';
         modalOpen = false;
+        document.body.style.overflow = 'auto';
       };
 
-      // When the user clicks anywhere outside of the modal, close it
+      // Close modal when clicking outside of modal
       window.onclick = function (event) {
         if (event.target == modal) {
           modal.style.display = 'none';
           modalOpen = false;
+          document.body.style.overflow = 'auto';
         }
       };
 
+      // Close modal when pressing escape key
       document.addEventListener('keydown', function (event) {
         if (modalOpen && event.key === 'Escape') {
           modal.style.display = 'none';
