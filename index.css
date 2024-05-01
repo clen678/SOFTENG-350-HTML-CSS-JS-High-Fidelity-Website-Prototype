@@ -7,6 +7,8 @@
   --pink: #e75a7c;
   --poo: #cda434;
   --poohighlight: #ddb340;
+  --poohighlight2:#f6d70f;
+  --poohighdark: #dec10a;
   --offwhite: rgb(233, 233, 233);
   --white: rgb(255, 255, 255);
   --white2: #f3f3f4;
@@ -65,7 +67,7 @@ body {
 }
 
 .page-navigation-buttons a:hover {
-  color: var(--poohighlight);
+  color: var(--poohighlight2);
 }
 
 .sign-up {
@@ -82,14 +84,16 @@ body {
 }
 
 .sign-up:hover {
-  /* background-color: var(--poohighlight); */
-  border-color: var(--poohighlight);
+  background-color: var(--poohighlight2);
+  border-color: var(--poohighlight2);
   color: var(--grey2);
-  background: linear-gradient(30deg, rgba(205, 164, 52, 1) 0%, rgba(255, 237, 28, 1) 100%);
+  /* background: linear-gradient(30deg, rgba(205, 164, 52, 1) 0%, rgba(255, 237, 28, 1) 100%); */
+  /* background: linear-gradient(30deg, rgb(205, 164, 52) 0%, rgba(255, 237, 28, 1) 80%, rgb(242, 242, 242) 100%); */
+
 }
 
 .login:hover {
-  color: var(--poohighlight);
+  color: var(--poohighlight2);
 }
 
 .search-component {
@@ -98,7 +102,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 385px;
+  height: 400px;
   aspect-ratio: 8/2;
   color: var(--white);
 
@@ -109,7 +113,7 @@ body {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  filter: blur(2px) saturate(0.4);
+  filter: blur(2px) saturate(0.7);
   background-color: rgba(0, 0, 0, 0.5); /* Change the color and opacity as needed */
   z-index: -21;
 }
@@ -154,8 +158,8 @@ body {
 }
 
 .submit-btn:hover {
-  background-color: var(--poohighlight);
-  border-color: var(--poohighlight);
+  background-color: var(--poohighlight2);
+  border-color: var(--poohighlight2);
   color: var(--grey2);
 }
 
@@ -181,8 +185,8 @@ body {
 }
 
 .categories a:hover {
-  /* background-color: var(--poohighlight); */
-  background: linear-gradient(30deg, rgba(205, 164, 52, 1) 0%, rgba(255, 237, 28, 1) 100%);
+  background-color: var(--poohighlight2);
+  /* background: linear-gradient(30deg, rgb(205, 164, 52) 0%, rgba(255, 237, 28, 1) 80%, rgb(242, 242, 242) 100%); */
   color: var(--grey2);
   transform: translateX(2px) translateY(-2px);
 }
@@ -199,8 +203,8 @@ body {
 .gallery h1 {
   display: inline-block;
   color: var(--white);
-  margin: 10px 0 15px 10px;
-}
+  margin: 25px 0 25px 10px;
+} 
 
 .gallery .see-more-btn {
   position: absolute;
@@ -219,7 +223,9 @@ body {
 }
 
 .gallery .see-more-btn:hover {
-  background-color: var(--poohighlight);
+  background-color: var(--poohighlight2);
+  border-color: var(--poohighlight2);
+  color:  var(--grey2);
 }
 
 .items {
@@ -275,7 +281,8 @@ body {
 }
 
 .item-link-text:hover {
-  color: #9b7e2d;
+  /* color: #9b7e2d; */
+  color: var(--poohighlight2);
 }
 
 /* The Modal (background) */
@@ -323,7 +330,7 @@ body {
 
 .close:hover,
 .close:focus {
-  color: var(--poohighlight);
+  color: var(--poohighlight2);
   text-decoration: none;
   cursor: pointer;
 }
@@ -382,8 +389,8 @@ body {
 }
 
 .submit-details:hover {
-  background-color: var(--poohighlight);
-  border-color: var(--poohighlight);
+  background-color: var(--poohighlight2);
+  border-color: var(--poohighlight2);
   color: var(--grey2);
 }
 
